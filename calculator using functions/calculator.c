@@ -3,8 +3,8 @@
 float a,b;
 int input(){
     printf("Enter the two numbers: ");
-    scanf("%d", &a);
-    scanf("%d", &b);
+    scanf("%f", &a);
+    scanf("%f", &b);
     return 0;
 }
 
