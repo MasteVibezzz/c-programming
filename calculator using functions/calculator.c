@@ -8,56 +8,48 @@ int input(){
     return 0;
 }
 
-int add(){
+float add(){
     return a+b;
 }
 
-int subtract(){
+float subtract(){
     return a-b;
 }
 
-int multiply(){
+float multiply(){
     return a*b;
 }
 
-int divide(){
-    return a*(1/b);
+float divide(){
+    return a/b;
 }
 
-int main(){
+int main()
+{
     int n;
-    int inp=input();
-    float addition = add();
-    float subtraction = subtract();
-    float multiplication = multiply();
-    float division = divide();
-    printf("add, subtract, multiply, or divide ?");
-    printf("choose 1, 2, 3 or 4");
+    input();
+    printf("Choose operation:\n1=add\n2=subtract\n3=multiply\n4=divide\nEnter your choice (1-4): ");
     scanf("%d", &n);
-    
-    if(n==1)
+    if (n==1)
     {
-        printf("%f" ,addition);
+            printf("%f", add());
     }
-    
     else if (n==2)
     {
-        printf("%f" ,subtraction);
+        printf("%f", subtract());
     }
-    
     else if (n==3)
     {
-        printf("%f" ,multiplication);
+        printf("%f", multiply());
     }
-
     else if (n==4)
     {
-        printf("%f" ,division);
+        printf("%f", divide());
     }
-
     else
     {
         printf("Invalid input");
     }
     
+    return 0;
 }
