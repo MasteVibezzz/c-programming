@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double a,b;
+float a,b;
 int input(){
     printf("Enter the two numbers: ");
     scanf("%d", &a);
@@ -27,32 +27,32 @@ int divide(){
 int main(){
     int n;
     int inp=input();
-    double addition = add();
-    double subtraction = subtract();
-    double multiplication = multiply();
-    double division = divide();
+    float addition = add();
+    float subtraction = subtract();
+    float multiplication = multiply();
+    float division = divide();
     printf("add, subtract, multiply, or divide ?");
     printf("choose 1, 2, 3 or 4");
     scanf("%d", &n);
     
     if(n==1)
     {
-        printf("%d" ,addition);
+        printf("%f" ,addition);
     }
     
     else if (n==2)
     {
-        printf("%d" ,subtraction);
+        printf("%f" ,subtraction);
     }
     
     else if (n==3)
     {
-        printf("%d" ,multiplication);
+        printf("%f" ,multiplication);
     }
 
     else if (n==4)
     {
-        printf("%d" ,division);
+        printf("%f" ,division);
     }
 
     else
